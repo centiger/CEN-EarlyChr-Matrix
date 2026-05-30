@@ -34,7 +34,7 @@ const HUBS=[
  {id:'expansion',icon:'🌎',title:'복음확장 허브',sub:'성전 미문 · 사마리아 · 에티오피아 내시 · 고넬료 · 안디옥 교회',ready:true},
  {id:'persecution',icon:'⚔️',title:'박해 허브',sub:'스데반 순교 · 교회 박해 · 사울 · 다메섹 · 바울 회심',ready:true},
  {id:'mission',icon:'✉️',title:'선교·서신 허브',sub:'1차 선교 · 예루살렘 공의회 · 2차 선교 · 3차 선교 · 옥중서신',ready:true},
- {id:'revelation',icon:'👑',title:'계시 허브',sub:'밧모섬 · 일곱 교회 · 하늘 보좌 · 새 예루살렘 · 재림',ready:false}
+ {id:'revelation',icon:'👑',title:'계시 허브',sub:'밧모섬 · 일곱 교회 · 하늘 보좌 · 새 예루살렘 · 재림',ready:true}
 ];
 function openHubList(){const box=document.getElementById('hubList');box.innerHTML=HUBS.map(h=>`<a class="hub-link" href="hubs/index.html?hub=${h.id}">${h.icon} ${h.title}${h.ready?'':' <small>제작 예정</small>'}<small>${h.sub}</small></a>`).join('');document.getElementById('hubModal').style.display='flex'}
 function closeHubList(){document.getElementById('hubModal').style.display='none'}
